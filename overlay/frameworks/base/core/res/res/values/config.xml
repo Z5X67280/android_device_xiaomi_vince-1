@@ -178,4 +178,7 @@
         <item>10</item>
     </integer-array>
 
+    <!-- Make things go fast -->
+    <bool name="config_ui_enableFadingMarquee">false</bool>
+
 </resources>
