@@ -39,6 +39,10 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture"
 
+# Strip debug
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-03-05
 
