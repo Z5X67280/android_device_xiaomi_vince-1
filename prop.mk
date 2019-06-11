@@ -30,3 +30,4 @@ persist.hwc.ptor.enable=true
 debug.sf.gpu_comp_tiling=1
 debug.performance.tuning=1
 video.accelerate.hw=1
+debug.sf.early_phase_offset_ns=5000000
