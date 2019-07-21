@@ -18,9 +18,6 @@
 
 DEVICE_PATH := device/xiaomi/vince
 
-# Display
-BOARD_USES_ADRENO := true
-
 # Filesystem
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -41,26 +38,15 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25765043200 # 25765059584 - 16384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
-TARGET_USES_MKE2FS := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture"
-
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
-
-# Strip debug
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2019-03-05
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
-# Pre-opt SystemUI
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/vince/BoardConfigVendor.mk
