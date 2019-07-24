@@ -30,3 +30,7 @@ persist.hwc.ptor.enable=true
 debug.sf.gpu_comp_tiling=1
 debug.performance.tuning=1
 video.accelerate.hw=1
+
+# Cam2API/EIS
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enable=1
