@@ -17,4 +17,10 @@
     "target_path": "kernel/xiaomi/msm8953",
     "branch":      "mokeast"
   }
+  {
+    "remote":	   "gitlab",
+    "repository":  "Keternal/GoogleCamera",
+    "target_path": "device/xiaomi/vince/GoogleCamera",
+    "branch":      "urk"
+  }
 ]
