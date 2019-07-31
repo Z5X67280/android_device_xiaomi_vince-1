@@ -59,5 +59,8 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Pre-opt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
+# Build Variant
+TARGET_BUILD_VARIANT=userdebug
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/vince/BoardConfigVendor.mk
