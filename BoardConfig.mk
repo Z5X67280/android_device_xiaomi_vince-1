@@ -60,7 +60,10 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Build Variant
-TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_VARIANT := userdebug
+
+# Dex Preopt
+WITH_DEXPREOPT := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/vince/BoardConfigVendor.mk
