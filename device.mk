@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8953
+    vendor.mokee.touch@1.0-service.xiaomi_8953
 
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
