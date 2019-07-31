@@ -55,4 +55,18 @@
     <!-- Make things go fast -->
     <bool name="config_ui_enableFadingMarquee">false</bool>
     
+    <!-- Whether to add AGPS parameter settings -->
+    <bool name="config_agps_enabled">true</bool>
+	
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.mokee.settings/org.mokee.settings.doze.DozeSettingsActivity</string>
+    
+    <!-- Defines the location of the fingerprint sensor on the device
+         0 = back
+         1 = front
+         2 = left side
+         3 = right side
+    -->
+    <integer name="config_fingerprintSensorLocation">0</integer>
+    
 </resources>
