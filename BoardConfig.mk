@@ -59,9 +59,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # Pre-opt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
-# Build Variant
-TARGET_BUILD_VARIANT := userdebug
-
 # Dex Preopt
 WITH_DEXPREOPT := true
 
