@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit some common Mokee stuff.
 $(call inherit-product, vendor/mokee/config/common_full_phone.mk)
 
+# Inherit Nokee Sound Stuff
+$(call inherit-product, vendor/mokee/config/mokee_audio.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
 PRODUCT_NAME := mokee_vince
@@ -32,6 +35,9 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.mk.maintainer=Keternal
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
